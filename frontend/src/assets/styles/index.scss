@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+// Basic colors
+$Grey50: #f9fafb;
+$Grey100: #f3f4f6;
+$Grey600: #4b5563;
+$Grey900: #111827;
+
+// Basic font sizes
+$Body2: 16px;
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+// Header
+
+header {
+  display: flex;
+  padding: 2vw 5vw;
+  justify-content: space-between;
+  align-items: center;
+  .headerLogoContainer {
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 30px;
+    color: $Grey900;
+  }
+  // decoration of nav elements
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+    li {
+      font-size: $Body2;
+      list-style-type: none;
+      a {
+        color: $Grey600;
+        text-decoration: none;
+      }
+      .downloadCV {
+        color: $Grey50;
+        padding: 0.5vw 1vw;
+        border-radius: 12px;
+        background-color: $Grey900;
+      }
+    }
+    li:nth-child(4) {
+      border-right: $Grey100;
+    }
+  }
+}

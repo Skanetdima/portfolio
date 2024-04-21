@@ -2,7 +2,7 @@ import icon from "../../assets/images/Icon.svg";
 export const Header = () => {
   return (
     <header>
-      <div className="headerLogoContainer"></div>
+      <div className="headerLogoContainer">DB</div>
       <nav>
         <ul>
           <li>
@@ -17,12 +17,18 @@ export const Header = () => {
           <li>
             <a href="#">Contact</a>
           </li>
+          <li>
+            <a href="#" className="changeTheme">
+              <img src={icon} alt="-" />
+            </a>
+          </li>
+          <li>
+            <a href="#" className="downloadCV">
+              Download CV
+            </a>
+          </li>
         </ul>
       </nav>
-      <a href="#" className="changeTheme">
-        <img src={icon} alt="-" />
-      </a>
-      <div className="downloadCV"></div>
     </header>
   );
 };
