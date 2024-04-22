@@ -58,3 +58,72 @@ header {
     }
   }
 }
+
+// First container
+
+.firstContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  padding: 5vw;
+  .firstTextContainer {
+    display: flex;
+    flex-direction: column;
+    .firstDescription {
+      padding-block: 2vw;
+      max-width: 50vw;
+      font-size: $Body2;
+      color: $Grey600;
+    }
+    span {
+      display: grid;
+      grid-template-columns: 2vw 14vw;
+      grid-template-rows: repeat(2, auto);
+      justify-items: center;
+      align-items: center;
+      gap: 0.1vw;
+      font-size: $Body2;
+      color: $Grey600;
+      p {
+        width: 14vw;
+      }
+    }
+    .firstSocialmediaContainer {
+      padding-block: 2vw;
+      display: flex;
+      gap: 0.1vw;
+      justify-items: center;
+      a {
+      }
+    }
+  }
+  .firstImageContainer {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      width: 15vw;
+      background: $Grey600;
+      background-position: 10% 25%;
+      animation: animate infinite 5s;
+      border-radius: 20px;
+    }
+  }
+  @keyframes animate {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { FirstContainer } from "./sections/firstContainer";
 import { Header } from "./sections/partials/Header";
 
 export default function App() {
@@ -5,7 +6,7 @@ export default function App() {
     <>
       <Header />
       <main>
-        <div className="firstContainer">{}</div>
+        <FirstContainer />
       </main>
     </>
   );
