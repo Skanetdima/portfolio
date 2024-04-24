@@ -110,4 +110,62 @@ header ul li:nth-child(4) {
   100% {
     opacity: 1;
   }
+}
+
+.secondContainer {
+  background: #f9fafb;
+  display: grid;
+  justify-content: center;
+  gap: 2vw;
+  align-items: flex-start;
+  justify-items: center;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+}
+.secondContainer .secondAboutMe {
+  grid-column: 1/3;
+}
+.secondContainer .secondTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vw;
+  grid-column: 2/3;
+}
+.secondContainer .secondTextContainer p {
+  max-width: 40vw;
+  font-size: 16px;
+  color: #4b5563;
+}
+.secondContainer .secondTextContainer ul {
+  display: grid;
+  gap: 20px;
+  margin-left: 1.25vw;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.secondContainer .secondTextContainer ul li {
+  color: #4b5563;
+}
+.secondContainer .secondImageContainer {
+  grid-column: 1/2;
+  display: flex;
+  width: 50vw;
+  height: 50vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.secondContainer .secondImageContainer img {
+  animation: 5s secondAnim infinite;
+}
+@keyframes secondAnim {
+  0% {
+    box-shadow: 0;
+  }
+  50% {
+    box-shadow: 10px 15px 15px #4b5563;
+  }
+  100% {
+    box-shadow: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
