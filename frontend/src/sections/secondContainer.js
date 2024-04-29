@@ -3,7 +3,7 @@ import icon from "../assets/images/Pic.png";
 export const SecondContainer = () => {
   return (
     <div className="secondContainer">
-      <span className="secondAboutMe">About Me</span>
+      <span className="AboutMe">About Me</span>
       <div className="secondImageContainer">
         <img src={icon} alt="" />
       </div>
