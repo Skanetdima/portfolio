@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+.forContainers {
+  color: #4b5563;
+  display: flex;
+  padding: 5vw;
+  gap: 1.5vw;
+  align-items: center;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -177,14 +186,6 @@ header ul li:nth-child(4) {
   border-radius: 2vw;
 }
 
-.thirdContainer {
-  color: #4b5563;
-  display: flex;
-  padding: 5vw;
-  gap: 1.5vw;
-  align-items: center;
-  flex-direction: column;
-}
 .thirdContainer ul {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -200,4 +201,26 @@ header ul li:nth-child(4) {
 .thirdContainer ul li img {
   height: 64px;
   border-radius: 5px;
+}
+
+.fifthContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  padding: 5vw;
+  flex-direction: column;
+}
+.fifthContainer p {
+  color: #4b5563;
+}
+.fifthContainer ul li {
+  display: flex;
+}
+.fifthContainer ul li .fifthImageContainer {
+  padding: 3vw;
+  background-color: #f9fafb;
+}
+.fifthContainer ul li .fifthUlTextContainer {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

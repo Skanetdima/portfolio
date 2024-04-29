@@ -10,7 +10,7 @@ export const ThirdContainer = () => {
     );
   });
   return (
-    <div className="thirdContainer">
+    <div className="thirdContainer forContainers">
       <span className="AboutMe">Skills</span>
       <p>The skills, tools and technologies I am really good at:</p>
       <ul className="thirdItemsContainer">{divItems}</ul>
