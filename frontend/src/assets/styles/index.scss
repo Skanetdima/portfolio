@@ -15,6 +15,8 @@ $Grey900: #111827;
 $Body2: 16px;
 $Body3: 14px;
 $Heading3: 30px;
+$Subtitle: 20px;
+
 // Global styles for containers
 .forContainers {
   color: $Grey600;
@@ -90,7 +92,7 @@ header {
     }
     span {
       display: grid;
-      grid-template-columns: 2vw 14vw;
+      grid-template-columns: 2vw 18vw;
       grid-template-rows: repeat(2, auto);
       justify-items: center;
       align-items: center;
@@ -98,7 +100,7 @@ header {
       font-size: $Body2;
       color: $Grey600;
       p {
-        width: 14vw;
+        width: 18vw;
       }
     }
     .firstSocialmediaContainer {
@@ -106,8 +108,6 @@ header {
       display: flex;
       gap: 0.1vw;
       justify-items: center;
-      a {
-      }
     }
   }
   .firstImageContainer {
@@ -217,22 +217,58 @@ header {
       img {
         height: 64px;
         border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s ease;
+      }
+      img:hover {
+        transform: scale(1.1);
       }
       display: flex;
       align-items: center;
       flex-direction: column;
     }
   }
+  // fourthContainer
 }
-// fourthContainer
+.fourthContainer {
+  background-color: $Grey50;
+  ul {
+    list-style-type: none;
+    .fourthExperienceItem {
+      .fourthTextContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        h4 {
+          color: $Grey900;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1vw;
+          li {
+            max-width: 30vw;
+            margin-left: 1vw;
+          }
+        }
+      }
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      padding: 2vw;
+      gap: 3vw;
+      border-radius: 12px;
+      box-shadow: 0 4px 3px rgb(0 0 0 / 0.07);
+      ul {
+        list-style-type: disc;
+      }
+    }
+  }
+}
 
+// fifthContainer
 .fifthContainer {
-  display: flex;
-  align-items: center;
-  gap: 1.5vw;
-  padding: 5vw;
-  flex-direction: column;
   p {
+    font-size: $Subtitle;
     color: $Grey600;
   }
   ul {

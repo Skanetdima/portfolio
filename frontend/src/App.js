@@ -12,7 +12,6 @@ export default function App() {
         <FirstContainer />
         <SecondContainer />
         <ThirdContainer />
-
         <FourthContainer />
       </main>
     </>

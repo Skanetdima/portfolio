@@ -75,7 +75,7 @@ header ul li:nth-child(4) {
 }
 .firstContainer .firstTextContainer span {
   display: grid;
-  grid-template-columns: 2vw 14vw;
+  grid-template-columns: 2vw 18vw;
   grid-template-rows: repeat(2, auto);
   justify-items: center;
   align-items: center;
@@ -84,7 +84,7 @@ header ul li:nth-child(4) {
   color: #4b5563;
 }
 .firstContainer .firstTextContainer span p {
-  width: 14vw;
+  width: 18vw;
 }
 .firstContainer .firstTextContainer .firstSocialmediaContainer {
   padding-block: 2vw;
@@ -201,16 +201,50 @@ header ul li:nth-child(4) {
 .thirdContainer ul li img {
   height: 64px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.thirdContainer ul li img:hover {
+  transform: scale(1.1);
 }
 
-.fifthContainer {
-  display: flex;
-  align-items: center;
-  gap: 1.5vw;
-  padding: 5vw;
-  flex-direction: column;
+.fourthContainer {
+  background-color: #f9fafb;
 }
+.fourthContainer ul {
+  list-style-type: none;
+}
+.fourthContainer ul .fourthExperienceItem {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 2vw;
+  gap: 3vw;
+  border-radius: 12px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.07);
+}
+.fourthContainer ul .fourthExperienceItem .fourthTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.fourthContainer ul .fourthExperienceItem .fourthTextContainer h4 {
+  color: #111827;
+}
+.fourthContainer ul .fourthExperienceItem .fourthTextContainer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.fourthContainer ul .fourthExperienceItem .fourthTextContainer ul li {
+  max-width: 30vw;
+  margin-left: 1vw;
+}
+.fourthContainer ul .fourthExperienceItem ul {
+  list-style-type: disc;
+}
+
 .fifthContainer p {
+  font-size: 20px;
   color: #4b5563;
 }
 .fifthContainer ul li {

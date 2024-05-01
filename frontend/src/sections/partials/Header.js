@@ -2,7 +2,7 @@ import icon from "../../assets/images/Icon.svg";
 export const Header = () => {
   return (
     <header>
-      <div className="headerLogoContainer">DB</div>
+      <div className="headerLogoContainer">{`{DB}`}</div>
       <nav>
         <ul>
           <li>
