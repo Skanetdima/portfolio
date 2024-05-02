@@ -1,4 +1,4 @@
-import { items, items1 } from "./data/fourthContainer";
+import { items, items1 } from "./data/fourthItems";
 
 export const FourthContainer = () => {
   const ulInDivItems = items1.map((obj) => {
