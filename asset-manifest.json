@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d68e784.css",
+    "main.js": "/static/js/main.bbfce49d.js",
+    "static/media/Pic.png": "/static/media/Pic.2286cfd627a2ae8b2568.png",
+    "static/media/Picture1.png": "/static/media/Picture1.89405bafb609d47e3853.png",
+    "static/media/photo_2024-04-22_08-23-36.jpg": "/static/media/photo_2024-04-22_08-23-36.e9a543c1d266c619743c.jpg",
+    "static/media/Picture.png": "/static/media/Picture.72992ee030e7816b3ed3.png",
+    "static/media/icon-sass.svg": "/static/media/icon-sass.3ff5ffffa28cb7b08b552dfd44537378.svg",
+    "static/media/icon-nodejs.svg": "/static/media/icon-nodejs.e318042b677e223030bb3e5511bde07f.svg",
+    "static/media/Icon4.svg": "/static/media/Icon4.6fedf405a7ab625f632a98e83ac9e923.svg",
+    "static/media/icon-figma.svg": "/static/media/icon-figma.9f82e63777a008b3a483fb64af427d6f.svg",
+    "static/media/icon-django.svg": "/static/media/icon-django.b062878ade3e5d6fdd56c82c5a1ca0ca.svg",
+    "static/media/icon-git.svg": "/static/media/icon-git.68a3c0c8715aef47b24dc14f9456c8bc.svg",
+    "static/media/icon-python.svg": "/static/media/icon-python.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "static/media/icon-express.svg": "/static/media/icon-express.5b1ab188744fa5aadfb55a449855884b.svg",
+    "static/media/icon-react.svg": "/static/media/icon-react.787d88f2947e9fc64e7726eebe0c6f17.svg",
+    "static/media/Icon.svg": "/static/media/Icon.7e11ddd698a36bce0b2e8ed8678b1cda.svg",
+    "static/media/icon-avatar.svg": "/static/media/icon-avatar.031a5a51070e78cff97d1ca4134c1831.svg",
+    "static/media/icon-javscript.svg": "/static/media/icon-javscript.b71318431091a4f0b2c122b5aff75a09.svg",
+    "static/media/icon-mongodb.svg": "/static/media/icon-mongodb.89e967f4e194a6a9fd3c6496c97be866.svg",
+    "static/media/Icon2.svg": "/static/media/Icon2.c653150a276e0222975d59200a3cf44f.svg",
+    "static/media/Icon_Button.svg": "/static/media/Icon_Button.a309e87f538e4bb69152b7a681b3c982.svg",
+    "index.html": "/index.html",
+    "static/media/Icon1.svg": "/static/media/Icon1.4d55280757661d14d7b62f4c8d4c66d0.svg",
+    "static/media/Icon3.svg": "/static/media/Icon3.dc93accea1a7574f2ed7e874c24cdd3f.svg",
+    "static/media/icon-dot-emerald-500.svg": "/static/media/icon-dot-emerald-500.0bd0d60e5c305e0ebc1eeb93d347e479.svg",
+    "main.3d68e784.css.map": "/static/css/main.3d68e784.css.map",
+    "main.bbfce49d.js.map": "/static/js/main.bbfce49d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d68e784.css",
+    "static/js/main.bbfce49d.js"
+  ]
+}
