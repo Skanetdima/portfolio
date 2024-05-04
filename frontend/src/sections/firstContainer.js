@@ -1,9 +1,8 @@
 import icon from "../assets/images/Icon1.svg";
 import icon1 from "../assets/images/icon-dot-emerald-500.svg";
-import icon2 from "../assets/images/Icon2.svg";
-import icon3 from "../assets/images/Icon3.svg";
-import icon4 from "../assets/images/Icon4.svg";
+
 import icon5 from "../assets/images/photo_2024-04-22_08-23-36.jpg";
+import { socialMedias } from "./partials/SocialMedias";
 
 export const FirstContainer = () => {
   return (
@@ -25,17 +24,7 @@ export const FirstContainer = () => {
           <img src={icon1} alt="" />
           <p>Available for new projects</p>
         </span>
-        <div className="firstSocialmediaContainer">
-          <a href="">
-            <img src={icon2} alt="" />
-          </a>
-          <a href="">
-            <img src={icon3} alt="" />
-          </a>
-          <a href="">
-            <img src={icon4} alt="" />
-          </a>
-        </div>
+        <div className="firstSocialmediaContainer">{socialMedias()}</div>
       </div>
       <div className="firstImageContainer">
         <img src={icon5} alt="" />

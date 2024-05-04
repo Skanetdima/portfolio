@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+button {
+  all: unset;
+}
+
 .forContainers {
   color: #4b5563;
   display: flex;
@@ -11,6 +15,19 @@
   gap: 1.5vw;
   align-items: center;
   flex-direction: column;
+}
+
+.buttonsHover {
+  transition: 0.4s ease;
+  border-radius: 0.5vw;
+  padding: 0.4vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonsHover:hover {
+  background-color: #e5e7eb;
 }
 
 body {
@@ -45,12 +62,21 @@ header ul li {
 header ul li a {
   color: #4b5563;
   text-decoration: none;
+  transition: 0.4s ease;
+}
+header ul li a:hover {
+  color: #111827;
 }
 header ul li .downloadCV {
   color: #f9fafb;
   padding: 0.5vw 1vw;
   border-radius: 12px;
   background-color: #111827;
+  transition: 0.4s ease;
+}
+header ul li .downloadCV:hover {
+  opacity: 0.7;
+  color: #f9fafb;
 }
 header ul li:nth-child(4) {
   border-right: #f3f4f6;
@@ -89,8 +115,7 @@ header ul li:nth-child(4) {
 .firstContainer .firstTextContainer .firstSocialmediaContainer {
   padding-block: 2vw;
   display: flex;
-  gap: 0.1vw;
-  justify-items: center;
+  gap: 0.5vw;
 }
 .firstContainer .firstImageContainer {
   width: 25vw;
@@ -290,6 +315,7 @@ header ul li:nth-child(4) {
   padding: 2vw;
   gap: 2vw;
   align-items: flex-start;
+  justify-items: flex-start;
 }
 .fifthContainer ul li .fifthUlTextContainer p {
   font-size: 16px;
@@ -297,4 +323,38 @@ header ul li:nth-child(4) {
 }
 .fifthContainer ul li:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.sixthContainer {
+  background-color: #f9fafb;
+}
+.sixthContainer ul {
+  display: flex;
+  gap: 3vw;
+}
+.sixthContainer ul li {
+  display: grid;
+  padding: 2vw;
+  gap: 1vw;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 20vw;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.seventhContainer .seventhEmail {
+  color: #111827;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.seventhContainer .seventhSocialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
 }/*# sourceMappingURL=index.css.map */

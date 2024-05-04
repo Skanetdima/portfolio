@@ -23,7 +23,7 @@ export const FifthContainer = () => {
           <ul>
             {obj.h4 === "Robin.W" ? divUlItemsForRobin : divUlItemsForGuess}
           </ul>
-          <a href={obj.a}>
+          <a className="buttonsHover" href={obj.a}>
             <img src={icon} alt="" />
           </a>
         </div>

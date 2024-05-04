@@ -18,7 +18,7 @@ export const Header = () => {
             <a href="#">Contact</a>
           </li>
           <li>
-            <a href="#" className="changeTheme">
+            <a href="#" className="changeTheme buttonsHover">
               <img src={icon} alt="-" />
             </a>
           </li>
