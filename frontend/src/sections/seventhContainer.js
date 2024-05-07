@@ -7,6 +7,9 @@ export const SeventhContainer = () => {
   const h3Ref = useRef(null);
 
   const handleClick = () => {
+    let popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
     // Getting value
     const h3Content = h3Ref.current.textContent || h3Ref.current.innerText;
 
@@ -26,8 +29,11 @@ export const SeventhContainer = () => {
         <h3 ref={h3Ref} id="seventhEmailH3">
           dimabogacan@gmail.com
         </h3>
-        <button onClick={handleClick} className="buttonsHover">
+        <button onClick={handleClick} className="buttonsHover popup">
           <img src={icon1} />
+          <span className="popuptext" id="myPopup">
+            Copied
+          </span>
         </button>
       </span>
       <span>You may also find me on these platforms!</span>

@@ -4,8 +4,10 @@
   padding: 0;
 }
 
-button {
+button,
+a {
   all: unset;
+  cursor: pointer;
 }
 
 .forContainers {
@@ -30,6 +32,10 @@ button {
   background-color: #e5e7eb;
 }
 
+.hamburger {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -40,7 +46,12 @@ body {
 
 header {
   display: flex;
-  padding: 2vw 5vw;
+  -webkit-backdrop-filter: brightness(95%) blur(7px);
+          backdrop-filter: brightness(95%) blur(7px);
+  position: fixed;
+  z-index: 999;
+  width: 90vw;
+  padding: 1vw 5vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -56,7 +67,7 @@ header ul {
   gap: 2.5vw;
 }
 header ul li {
-  font-size: 16px;
+  font-size: 1.025rem;
   list-style-type: none;
 }
 header ul li a {
@@ -82,6 +93,27 @@ header ul li:nth-child(4) {
   border-right: #f3f4f6;
 }
 
+.offScreenMenu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
+  width: 100%;
+  max-width: 90%;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s;
+}
+
+.offScreenMenu.active {
+  right: 0;
+}
+
 .firstContainer {
   display: flex;
   align-items: center;
@@ -96,7 +128,7 @@ header ul li:nth-child(4) {
 .firstContainer .firstTextContainer .firstDescription {
   padding-block: 2vw;
   max-width: 50vw;
-  font-size: 16px;
+  font-size: 1.025rem;
   color: #4b5563;
 }
 .firstContainer .firstTextContainer span {
@@ -106,7 +138,7 @@ header ul li:nth-child(4) {
   justify-items: center;
   align-items: center;
   gap: 0.1vw;
-  font-size: 16px;
+  font-size: 1.025rem;
   color: #4b5563;
 }
 .firstContainer .firstTextContainer span p {
@@ -166,7 +198,7 @@ header ul li:nth-child(4) {
 }
 .secondContainer .secondTextContainer p {
   max-width: 40vw;
-  font-size: 16px;
+  font-size: 1.025rem;
   color: #4b5563;
 }
 .secondContainer .secondTextContainer ul {
@@ -318,7 +350,7 @@ header ul li:nth-child(4) {
   justify-items: flex-start;
 }
 .fifthContainer ul li .fifthUlTextContainer p {
-  font-size: 16px;
+  font-size: 1.025rem;
   color: #4b5563;
 }
 .fifthContainer ul li:nth-child(even) {
@@ -343,10 +375,19 @@ header ul li:nth-child(4) {
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
 }
+.sixthContainer ul li p {
+  font-size: 1.025rem;
+}
 
+.seventhContainer {
+  /* The actual popup */
+  /* Popup arrow */
+  /* Toggle this class - hide and show the popup */
+  /* Add animation (fade in the popup) */
+}
 .seventhContainer .seventhEmail {
   color: #111827;
-  font-size: 30px;
+  font-size: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,4 +398,168 @@ header ul li:nth-child(4) {
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
+}
+.seventhContainer .popup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.seventhContainer .popup .popuptext {
+  visibility: hidden;
+  width: 10vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 3vw;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  font-size: 14px;
+  left: 50%;
+  margin-left: -80px;
+}
+.seventhContainer .popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.seventhContainer .popup .show {
+  visibility: visible;
+  animation: fadeIn 0.4s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #f9fafb;
+  padding-block: 1vw;
+  justify-content: center;
+}
+footer span {
+  color: #4b5563;
+  font-size: 14px;
+}
+footer span a {
+  text-decoration: underline;
+  transition: 0.4s ease;
+}
+footer span a:hover {
+  color: #111827;
+}
+
+@media (max-width: 1024px) {
+  .fifthContainer ul li {
+    flex-direction: column !important;
+  }
+  .fifthContainer ul li .fifthUlTextContainer {
+    grid-template-rows: repeat(4, auto);
+  }
+  .fifthContainer ul li ul {
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    align-items: center;
+  }
+  header nav {
+    display: none;
+  }
+  header .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  header .hamburger img {
+    width: 10vw;
+    transition: 0.4s;
+  }
+  .firstContainer {
+    flex-direction: column-reverse;
+  }
+  .firstContainer .firstImageContainer {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 10vw;
+  }
+  .firstContainer .firstImageContainer img {
+    width: 50vw;
+  }
+  .firstContainer .firstTextContainer .firstDescription {
+    max-width: none;
+  }
+  .firstContainer .firstTextContainer span {
+    grid-template-columns: 2vw 34vw;
+  }
+  .firstContainer .firstTextContainer span p {
+    width: 30vw;
+  }
+  .secondContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondContainer .secondTextContainer p {
+    max-width: none;
+  }
+  .secondContainer .secondImageContainer {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .secondContainer .secondImageContainer img {
+    width: 100%;
+  }
+  .thirdContainer .thirdItemsContainer {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
+  }
+  .fourthContainer ul .fourthExperienceItem {
+    padding: 10vw;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, auto);
+  }
+  .fourthContainer ul .fourthExperienceItem .fourthTextContainer ul li {
+    max-width: none;
+  }
+  .fifthContainer ul li .fifthImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fifthContainer ul li .fifthImageContainer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fifthContainer ul li .fifthImageContainer a img {
+    width: 90vw;
+  }
+  .fifthContainer ul li .fifthUlTextContainer {
+    grid-template-columns: 80vw;
+  }
+  .sixthContainer ul {
+    flex-direction: column;
+  }
+  .sixthContainer ul li {
+    grid-template-columns: 90vw;
+  }
+  .sixthContainer ul li p {
+    width: 80vw;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -6,6 +6,7 @@ import { ThirdContainer } from "./sections/thirdContainer";
 import { FourthContainer } from "./sections/fourthContainer";
 import { SixthContainer } from "./sections/sixthContainer";
 import { SeventhContainer } from "./sections/seventhContainer";
+import { Footer } from "./sections/partials/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <SixthContainer />
         <SeventhContainer />
       </main>
+      <Footer />
     </>
   );
 }
