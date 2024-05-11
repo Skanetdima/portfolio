@@ -1,28 +1,46 @@
 import icon from "../../assets/images/Icon.svg";
 import icon1 from "../../assets/images/hamburger.svg";
 import icon2 from "../../assets/images/cross.svg";
-import { useState } from "react";
 
 export const Header = () => {
-  const [toggleList, setToggleist] = useState(true);
-
   const toggleMenu = () => {
-    let hambIconSrc = document.querySelector(".hamburger img").src;
-    let hambIcon = document.querySelector(".hamburger img");
-    if (hambIconSrc.indexOf(icon2) != -1) {
-      hambIcon.src = icon1;
-    } else {
-      hambIcon.src = icon2;
-    }
+    let offScreenMenu = document.querySelector(".offScreenMenu");
+    offScreenMenu.classList.toggle("active");
+    let body = document.querySelector("body");
+    body.classList.toggle("active");
   };
   return (
     <>
       <div className="offScreenMenu">
+        <div className="headerLogoContainer">
+          <p>{`{DB}`}</p>
+          <div onClick={toggleMenu} className="hamburgerCross">
+            <img src={icon2} alt="" />
+          </div>
+        </div>
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>Contact</li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Work</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
+        <span>
+          <p>Switch Theme</p>
+          <a href="#" className="changeTheme buttonsHover">
+            <img src={icon} alt="-" />
+          </a>
+        </span>
+        <a href="#" className="downloadCV">
+          Download CV
+        </a>
       </div>
       <header>
         <div className="headerLogoContainer">{`{DB}`}</div>
