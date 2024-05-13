@@ -18,13 +18,20 @@ export default function App() {
     e.preventDefault();
     const body = document.querySelector("body");
     body.classList.remove("active");
-    const image = document.getElementById("headerThemeImg");
-    if (image.getAttribute("src") == icon) {
-      image.src = icon3;
-    } else {
-      image.src = icon;
-    }
-
+    const headerImage = document.querySelector(".headerThemeImg");
+    const headerImage2 = document.querySelector(".headerThemeImg2");
+    const applyIcon = (headerImage) => {
+      switch (headerImage.getAttribute("src")) {
+        case icon:
+          headerImage.src = icon3;
+          break;
+        default:
+          headerImage.src = icon;
+          break;
+      }
+    };
+    applyIcon(headerImage);
+    applyIcon(headerImage2);
     setTheme(theme === "light" ? "dark" : "light");
   };
 

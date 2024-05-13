@@ -10,7 +10,6 @@ export const Header = ({ darkMode, theme }) => {
     let body = document.querySelector("body");
     body.classList.toggle("active");
   };
-
   return (
     <>
       <div className={`offScreenMenu ${theme}`}>
@@ -37,7 +36,7 @@ export const Header = ({ darkMode, theme }) => {
         <span onClick={darkMode}>
           <p>Switch Theme</p>
           <a href="#" className="changeTheme buttonsHover">
-            <img id="headerThemeImg" src={icon} alt="-" />
+            <img className="headerThemeImg" src={icon} alt="-" />
           </a>
         </span>
         <a href="#" className="downloadCV">
@@ -62,7 +61,7 @@ export const Header = ({ darkMode, theme }) => {
             </li>
             <li onClick={darkMode}>
               <a href="#" className="changeTheme buttonsHover">
-                <img id="headerThemeImg" src={icon} alt="-" />
+                <img className="headerThemeImg2" src={icon} alt="" />
               </a>
             </li>
             <li>
