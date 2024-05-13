@@ -1,8 +1,8 @@
 import icon from "../assets/images/Pic.png";
 
-export const SecondContainer = () => {
+export const SecondContainer = ({ theme }) => {
   return (
-    <div className="secondContainer">
+    <div className={theme}>
       <span className="AboutMe">About Me</span>
       <div className="secondImageContainer">
         <img src={icon} alt="" />

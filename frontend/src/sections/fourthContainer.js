@@ -1,6 +1,6 @@
 import { items, items1 } from "./data/fourthItems";
 
-export const FourthContainer = () => {
+export const FourthContainer = ({ theme }) => {
   const ulInDivItems = items1.map((obj) => {
     return <li key={obj.id}>{obj.text}</li>;
   });
@@ -17,7 +17,7 @@ export const FourthContainer = () => {
     );
   });
   return (
-    <div className="fourthContainer forContainers">
+    <div className={theme}>
       <span className="AboutMe">Experience</span>
       <p>Here is a quick summary of my most recent experiences:</p>
       <ul>{divItems}</ul>

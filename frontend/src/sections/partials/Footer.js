@@ -1,6 +1,6 @@
-export const Footer = () => {
+export const Footer = ({ theme }) => {
   return (
-    <footer>
+    <footer className={theme}>
       <span>
         &copy; 2024 |{" "}
         <a

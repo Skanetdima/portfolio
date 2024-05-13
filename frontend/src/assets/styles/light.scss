@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+// default styles for white theme
+:root {
+  --app-gray-default: 255 255 255;
+  --app-gray-50: 249 250 251;
+  --app-gray-100: 243 244 246;
+  --app-gray-200: 229 231 235;
+  --app-gray-300: 209 213 219;
+  --app-gray-400: 156 163 175;
+  --app-gray-500: 107 114 128;
+  --app-gray-600: 75 85 99;
+  --app-gray-700: 55 65 81;
+  --app-gray-800: 31 41 55;
+  --app-gray-900: 17 24 39;
+  --app-gray-950: 3 7 18;
+}
+body.active {
+  overflow: hidden;
+}
+
 // Reseting styles
 * {
   margin: 0;
   padding: 0;
-}
-
-body.active {
-  overflow: hidden;
 }
 
 button,
@@ -16,12 +31,17 @@ a {
   cursor: pointer;
 }
 
-// Basic colors
+// Basic colors for white
 $Gray50: #f9fafb;
 $Gray100: #f3f4f6;
 $Gray200: #e5e7eb;
 $Gray600: #4b5563;
 $Gray900: #111827;
+// Basic colors for black
+$GrayDarkDefault: #030712;
+$GrayDark50: #111827;
+$GrayDark100: #1f2937;
+$GrayDark200: #374151;
 
 // Basic font sizes
 $Body2: 1.025rem;
@@ -32,12 +52,17 @@ $Subtitle: 20px;
 
 // Global styles for containers
 .forContainers {
-  color: $Gray600;
   display: flex;
   padding: 5vw;
   gap: 1.5vw;
   align-items: center;
   flex-direction: column;
+}
+.forContainers.light {
+  color: $Gray600;
+}
+.forContainers.light:nth-child(even) {
+  background-color: $Gray50;
 }
 // Global button decoration
 .buttonsHover {
@@ -119,18 +144,17 @@ header {
 .offScreenMenu {
   backdrop-filter: brightness(95%) blur(7px);
   padding: 5vw;
-  padding-top: 2vw;
-  background-color: white;
+  padding-top: 1vw;
   height: 100vh;
   width: 100%;
-  max-width: 85%;
+  max-width: 80%;
   position: fixed;
   top: 0;
   right: -40vw;
   display: none;
   flex-direction: column;
   font-size: 3rem;
-  transition: 0.3s;
+  transition: 0.4s;
   z-index: 120;
 
   .headerLogoContainer {
@@ -147,11 +171,12 @@ header {
 
   // decoration of nav elements
   ul {
+    padding-block: 5vw;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     border-block: 1px solid $Gray200;
-    gap: 2.5vw;
+    gap: 8vw;
     li {
       font-size: $Body2;
       list-style-type: none;
@@ -186,14 +211,14 @@ header {
     display: flex;
     align-items: center;
     color: $Gray600;
-    margin-block: 1vw;
+    padding-block: 5vw;
     justify-content: space-between;
     font-size: $Body2;
   }
 }
 .offScreenMenu.active {
   display: flex;
-  animation: 0.4s offScreenActive;
+  animation: 0.4s offScreenActive linear;
   right: 0;
 }
 @keyframes offScreenActive {
@@ -209,6 +234,7 @@ header {
 
 .firstContainer {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 5vw;
@@ -231,7 +257,6 @@ header {
       align-items: center;
       gap: 0.1vw;
       font-size: $Body2;
-      color: $Gray600;
       p {
         width: 18vw;
       }
@@ -274,7 +299,6 @@ header {
 
 // Second Container
 .secondContainer {
-  background: $Gray50;
   display: grid;
   padding: 5vw;
   justify-content: center;
@@ -365,7 +389,6 @@ header {
   // fourthContainer
 }
 .fourthContainer {
-  background-color: $Gray50;
   ul {
     list-style-type: none;
     .fourthExperienceItem {
@@ -461,7 +484,6 @@ header {
 }
 
 .sixthContainer {
-  background-color: $Gray50;
   ul {
     display: flex;
     gap: 3vw;
@@ -566,8 +588,7 @@ header {
 footer {
   display: flex;
   align-items: center;
-  background-color: $Gray50;
-  padding-block: 1vw;
+  padding-block: 1vw !important;
   justify-content: center;
   span {
     color: $Gray600;
@@ -732,3 +753,5 @@ footer {
     }
   }
 }
+
+// Html toggle dark

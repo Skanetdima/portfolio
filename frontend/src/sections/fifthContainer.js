@@ -6,7 +6,7 @@ import {
 } from "./data/fifthItems";
 import icon from "../assets/images/Icon_Button.svg";
 
-export const FifthContainer = () => {
+export const FifthContainer = ({ theme }) => {
   const divUlItemsForRobin = itemsForRobin.map(mapForItems);
   const divUlItemsForGuess = itemsForGuess.map(mapForItems);
   const divItems = items.map((obj) => {
@@ -32,7 +32,7 @@ export const FifthContainer = () => {
   });
 
   return (
-    <div className="fifthContainer forContainers">
+    <div className={theme}>
       <span className="AboutMe">Work</span>
       <p>Here is a quick summary of my most recent experiences:</p>
       <ul>{divItems}</ul>

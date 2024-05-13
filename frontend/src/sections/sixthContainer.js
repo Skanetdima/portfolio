@@ -1,6 +1,6 @@
 import { items } from "./data/sixthItems";
 
-export const SixthContainer = () => {
+export const SixthContainer = ({ theme }) => {
   const divItems = items.map((obj) => (
     <li key={obj.id}>
       <img src={obj.image} alt="" />
@@ -10,7 +10,7 @@ export const SixthContainer = () => {
     </li>
   ));
   return (
-    <div className="sixthContainer forContainers">
+    <div className={theme}>
       <span className="AboutMe">Testimonials</span>
       <p>Nice things people have said about me:</p>
       <ul>{divItems}</ul>

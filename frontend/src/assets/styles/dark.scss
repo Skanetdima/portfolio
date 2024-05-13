@@ -1,0 +1,54 @@
+.dark-theme {
+  --app-gray-default: 3 7 18;
+  --app-gray-50: 17 24 39;
+  --app-gray-100: 31 41 55;
+  --app-gray-200: 55 65 81;
+  --app-gray-300: 75 85 99;
+  --app-gray-400: 107 114 128;
+  --app-gray-500: 156 163 175;
+  --app-gray-600: 209 213 219;
+  --app-gray-700: 229 231 235;
+  --app-gray-800: 243 244 246;
+  --app-gray-900: 249 250 251;
+  --app-gray-950: 255 255 255;
+}
+// Basic colors for black
+$GrayDarkDefault: #030712;
+$GrayDark50: #111827;
+$GrayDark100: #1f2937;
+$GrayDark200: #374151;
+$GrayDark600: #d1d5db;
+$GrayDark900: #f9fafb;
+
+// Global styles for containers
+.forContainers.dark {
+  background: $GrayDarkDefault;
+  color: $GrayDark600;
+}
+
+.forContainers.dark:nth-child(even) {
+  background: $GrayDark50;
+}
+
+// styles for header
+.header.dark {
+  color: $GrayDark600;
+  .headerLogoContainer {
+    color: $GrayDark900;
+  }
+  ul {
+    li {
+      a {
+        color: $GrayDark600;
+      }
+    }
+  }
+}
+// first Container
+.firstContainer.dark {
+  .firstTextContainer {
+    .firstDescription {
+      color: $GrayDark600;
+    }
+  }
+}

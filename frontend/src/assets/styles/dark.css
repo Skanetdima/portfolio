@@ -1,0 +1,37 @@
+.dark-theme {
+  --app-gray-default: 3 7 18;
+  --app-gray-50: 17 24 39;
+  --app-gray-100: 31 41 55;
+  --app-gray-200: 55 65 81;
+  --app-gray-300: 75 85 99;
+  --app-gray-400: 107 114 128;
+  --app-gray-500: 156 163 175;
+  --app-gray-600: 209 213 219;
+  --app-gray-700: 229 231 235;
+  --app-gray-800: 243 244 246;
+  --app-gray-900: 249 250 251;
+  --app-gray-950: 255 255 255;
+}
+
+.forContainers.dark {
+  background: #030712;
+  color: #d1d5db;
+}
+
+.forContainers.dark:nth-child(even) {
+  background: #111827;
+}
+
+.header.dark {
+  color: #d1d5db;
+}
+.header.dark .headerLogoContainer {
+  color: #f9fafb;
+}
+.header.dark ul li a {
+  color: #d1d5db;
+}
+
+.firstContainer.dark .firstTextContainer .firstDescription {
+  color: #d1d5db;
+}/*# sourceMappingURL=dark.css.map */

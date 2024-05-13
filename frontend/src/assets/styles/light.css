@@ -1,11 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --app-gray-default: 255 255 255;
+  --app-gray-50: 249 250 251;
+  --app-gray-100: 243 244 246;
+  --app-gray-200: 229 231 235;
+  --app-gray-300: 209 213 219;
+  --app-gray-400: 156 163 175;
+  --app-gray-500: 107 114 128;
+  --app-gray-600: 75 85 99;
+  --app-gray-700: 55 65 81;
+  --app-gray-800: 31 41 55;
+  --app-gray-900: 17 24 39;
+  --app-gray-950: 3 7 18;
 }
 
 body.active {
   overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 button,
@@ -15,12 +30,19 @@ a {
 }
 
 .forContainers {
-  color: #4b5563;
   display: flex;
   padding: 5vw;
   gap: 1.5vw;
   align-items: center;
   flex-direction: column;
+}
+
+.forContainers.light {
+  color: #4b5563;
+}
+
+.forContainers.light:nth-child(even) {
+  background-color: #f9fafb;
 }
 
 .buttonsHover {
@@ -101,18 +123,17 @@ header ul li:nth-child(4) {
   -webkit-backdrop-filter: brightness(95%) blur(7px);
           backdrop-filter: brightness(95%) blur(7px);
   padding: 5vw;
-  padding-top: 2vw;
-  background-color: white;
+  padding-top: 1vw;
   height: 100vh;
   width: 100%;
-  max-width: 85%;
+  max-width: 80%;
   position: fixed;
   top: 0;
   right: -40vw;
   display: none;
   flex-direction: column;
   font-size: 3rem;
-  transition: 0.3s;
+  transition: 0.4s;
   z-index: 120;
 }
 .offScreenMenu .headerLogoContainer {
@@ -127,11 +148,12 @@ header ul li:nth-child(4) {
   text-align: center;
 }
 .offScreenMenu ul {
+  padding-block: 5vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   border-block: 1px solid #e5e7eb;
-  gap: 2.5vw;
+  gap: 8vw;
 }
 .offScreenMenu ul li {
   font-size: 1.025rem;
@@ -166,14 +188,14 @@ header ul li:nth-child(4) {
   display: flex;
   align-items: center;
   color: #4b5563;
-  margin-block: 1vw;
+  padding-block: 5vw;
   justify-content: space-between;
   font-size: 1.025rem;
 }
 
 .offScreenMenu.active {
   display: flex;
-  animation: 0.4s offScreenActive;
+  animation: 0.4s offScreenActive linear;
   right: 0;
 }
 
@@ -187,6 +209,7 @@ header ul li:nth-child(4) {
 }
 .firstContainer {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 5vw;
@@ -211,7 +234,6 @@ header ul li:nth-child(4) {
   align-items: center;
   gap: 0.1vw;
   font-size: 1.025rem;
-  color: #4b5563;
 }
 .firstContainer .firstTextContainer span p {
   width: 18vw;
@@ -251,7 +273,6 @@ header ul li:nth-child(4) {
 }
 
 .secondContainer {
-  background: #f9fafb;
   display: grid;
   padding: 5vw;
   justify-content: center;
@@ -337,9 +358,6 @@ header ul li:nth-child(4) {
   transform: scale(1.1);
 }
 
-.fourthContainer {
-  background-color: #f9fafb;
-}
 .fourthContainer ul {
   list-style-type: none;
 }
@@ -429,9 +447,6 @@ header ul li:nth-child(4) {
   flex-direction: row-reverse;
 }
 
-.sixthContainer {
-  background-color: #f9fafb;
-}
 .sixthContainer ul {
   display: flex;
   gap: 3vw;
@@ -519,8 +534,7 @@ header ul li:nth-child(4) {
 footer {
   display: flex;
   align-items: center;
-  background-color: #f9fafb;
-  padding-block: 1vw;
+  padding-block: 1vw !important;
   justify-content: center;
 }
 footer span {
@@ -641,4 +655,4 @@ footer span a:hover {
   .sixthContainer ul li p {
     width: 80vw;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=light.css.map */

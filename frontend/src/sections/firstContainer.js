@@ -4,9 +4,9 @@ import icon1 from "../assets/images/icon-dot-emerald-500.svg";
 import icon5 from "../assets/images/photo_2024-04-22_08-23-36.jpg";
 import { socialMedias } from "./partials/SocialMedias";
 
-export const FirstContainer = () => {
+export const FirstContainer = ({ theme }) => {
   return (
-    <div className="firstContainer">
+    <div className={theme}>
       <div className="firstTextContainer">
         <h1>Hello, I'm Dmitry :)</h1>
         <p className="firstDescription">

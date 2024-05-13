@@ -3,7 +3,7 @@ import icon from "../assets/images/Icon8.svg";
 import icon1 from "../assets/images/Icon9.svg";
 import { useRef } from "react";
 
-export const SeventhContainer = () => {
+export const SeventhContainer = ({ theme }) => {
   const h3Ref = useRef(null);
 
   const handleClick = () => {
@@ -18,7 +18,7 @@ export const SeventhContainer = () => {
   };
 
   return (
-    <div className="seventhContainer forContainers">
+    <div className={theme}>
       <span className="AboutMe">Get in touch</span>
       <p>
         What’s next? Feel free to reach out to me if you're looking for a
