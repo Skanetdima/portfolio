@@ -13,8 +13,32 @@
   --app-gray-950: 255 255 255;
 }
 
+.offScreenMenu.dark {
+  background: #030712;
+}
+.offScreenMenu.dark .headerLogoContainer {
+  color: #f9fafb;
+}
+.offScreenMenu.dark span {
+  color: #d1d5db;
+}
+.offScreenMenu.dark ul li a {
+  color: #d1d5db;
+}
+.offScreenMenu.dark .downloadCV {
+  background: #f9fafb;
+  color: #030712;
+}
+
 .forContainers.dark {
   background: #030712;
+  color: #d1d5db !important;
+}
+.forContainers.dark .AboutMe {
+  color: #d1d5db;
+  background: #374151;
+}
+.forContainers.dark ul li .fifthUlTextContainer p {
   color: #d1d5db;
 }
 
@@ -31,7 +55,48 @@
 .header.dark ul li a {
   color: #d1d5db;
 }
+.header.dark ul li a:hover {
+  color: #f9fafb;
+}
+.header.dark ul li .downloadCV {
+  color: #111827;
+  background-color: #f9fafb;
+}
+.header.dark ul li .downloadCV:hover {
+  color: #030712;
+}
 
 .firstContainer.dark .firstTextContainer .firstDescription {
   color: #d1d5db;
+}
+
+.fourthContainer ul .fourthExperienceItem .fourthTextContainer h4.dark {
+  color: #f9fafb;
+}
+
+.fourthContainer ul .fourthExperienceItem.dark {
+  background: #1f2937;
+}
+
+.fifthContainer ul li .fifthImageContainer.dark {
+  background: #374151;
+}
+
+.fifthContainer.dark p {
+  color: #d1d5db;
+}
+
+.sixthContainer.dark ul li {
+  background: #374151;
+}
+
+.seventhContainer.dark .seventhEmail {
+  color: #d1d5db;
+}
+
+footer.dark span {
+  color: #d1d5db;
+}
+footer.dark span a:hover {
+  color: #f9fafb;
 }/*# sourceMappingURL=dark.css.map */

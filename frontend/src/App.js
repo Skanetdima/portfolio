@@ -13,7 +13,8 @@ import { useState } from "react";
 
 export default function App() {
   // darkmode
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
   const darkMode = (e) => {
     e.preventDefault();
     const body = document.querySelector("body");
@@ -32,7 +33,9 @@ export default function App() {
     };
     applyIcon(headerImage);
     applyIcon(headerImage2);
-    setTheme(theme === "light" ? "dark" : "light");
+    const NewTheme = theme === "light" ? "dark" : "light";
+    setTheme(NewTheme);
+    localStorage.setItem("theme", NewTheme);
   };
 
   return (

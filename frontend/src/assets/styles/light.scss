@@ -48,7 +48,7 @@ $Body2: 1.025rem;
 $Body3: 14px;
 $Heading1: 30px;
 $Heading3: 3vw;
-$Subtitle: 20px;
+$Subtitle: 2vw;
 
 // Global styles for containers
 .forContainers {
@@ -142,6 +142,7 @@ header {
 
 // hamb menu
 .offScreenMenu {
+  background: #fff;
   backdrop-filter: brightness(95%) blur(7px);
   padding: 5vw;
   padding-top: 1vw;
@@ -318,7 +319,6 @@ header {
     p {
       max-width: 40vw;
       font-size: $Body2;
-      color: $Gray600;
     }
     ul {
       display: grid;
@@ -326,9 +326,6 @@ header {
       margin-left: 1.25vw;
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(2, auto);
-      li {
-        color: $Gray600;
-      }
     }
   }
   .secondImageContainer {

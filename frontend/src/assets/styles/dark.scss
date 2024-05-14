@@ -20,10 +20,39 @@ $GrayDark200: #374151;
 $GrayDark600: #d1d5db;
 $GrayDark900: #f9fafb;
 
+// OffScreen
+.offScreenMenu.dark {
+  background: $GrayDarkDefault;
+  .headerLogoContainer {
+    color: $GrayDark900;
+  }
+  span {
+    color: $GrayDark600;
+  }
+  ul {
+    li {
+      a {
+        color: $GrayDark600;
+      }
+    }
+  }
+  .downloadCV {
+    background: $GrayDark900;
+    color: $GrayDarkDefault;
+  }
+}
+
 // Global styles for containers
 .forContainers.dark {
   background: $GrayDarkDefault;
-  color: $GrayDark600;
+  color: $GrayDark600 !important;
+  .AboutMe {
+    color: $GrayDark600;
+    background: $GrayDark200;
+  }
+  ul li .fifthUlTextContainer p {
+    color: $GrayDark600;
+  }
 }
 
 .forContainers.dark:nth-child(even) {
@@ -41,6 +70,16 @@ $GrayDark900: #f9fafb;
       a {
         color: $GrayDark600;
       }
+      a:hover {
+        color: $GrayDark900;
+      }
+      .downloadCV {
+        color: $GrayDark50;
+        background-color: $GrayDark900;
+      }
+      .downloadCV:hover {
+        color: $GrayDarkDefault;
+      }
     }
   }
 }
@@ -49,6 +88,39 @@ $GrayDark900: #f9fafb;
   .firstTextContainer {
     .firstDescription {
       color: $GrayDark600;
+    }
+  }
+}
+// fourth Container
+.fourthContainer ul .fourthExperienceItem .fourthTextContainer h4.dark {
+  color: $GrayDark900;
+}
+.fourthContainer ul .fourthExperienceItem.dark {
+  background: $GrayDark100;
+}
+
+// fifthContainer
+.fifthContainer ul li .fifthImageContainer.dark {
+  background: $GrayDark200;
+}
+.fifthContainer.dark p {
+  color: $GrayDark600;
+}
+
+// sixthContainer
+.sixthContainer.dark ul li {
+  background: $GrayDark200;
+}
+// seventhContainer
+.seventhContainer.dark .seventhEmail {
+  color: $GrayDark600;
+}
+// footer
+footer.dark {
+  span {
+    color: $GrayDark600;
+    a:hover {
+      color: $GrayDark900;
     }
   }
 }

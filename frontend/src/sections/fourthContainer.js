@@ -6,10 +6,10 @@ export const FourthContainer = ({ theme }) => {
   });
   const divItems = items.map((obj) => {
     return (
-      <li key={obj.id} className="fourthExperienceItem">
+      <li key={obj.id} className={`fourthExperienceItem ${theme.substr(30)}`}>
         <h4 style={{ color: "blue" }}>planner-AI</h4>
         <div className="fourthTextContainer">
-          <h4>{obj.h4}</h4>
+          <h4 className={theme.substr(30)}>{obj.h4}</h4>
           <ul>{ulInDivItems}</ul>
         </div>
         <p className="fourthDateContainer">{obj.p}</p>

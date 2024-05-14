@@ -12,7 +12,7 @@ export const FifthContainer = ({ theme }) => {
   const divItems = items.map((obj) => {
     return (
       <li key={obj.id}>
-        <div className="fifthImageContainer">
+        <div className={`fifthImageContainer ${theme.substr(29)}`}>
           <a href={obj.a}>
             <img src={obj.image} alt="" />
           </a>
