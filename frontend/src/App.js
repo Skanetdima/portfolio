@@ -6,8 +6,6 @@ import { ThirdContainer } from "./sections/thirdContainer";
 import { FourthContainer } from "./sections/fourthContainer";
 import { SixthContainer } from "./sections/sixthContainer";
 import { SeventhContainer } from "./sections/seventhContainer";
-import icon from "./assets/images/Icon.svg";
-import icon3 from "./assets/images/dark.svg";
 import { Footer } from "./sections/partials/Footer";
 import { useState } from "react";
 
@@ -19,20 +17,7 @@ export default function App() {
     e.preventDefault();
     const body = document.querySelector("body");
     body.classList.remove("active");
-    const headerImage = document.querySelector(".headerThemeImg");
-    const headerImage2 = document.querySelector(".headerThemeImg2");
-    const applyIcon = (headerImage) => {
-      switch (headerImage.getAttribute("src")) {
-        case icon:
-          headerImage.src = icon3;
-          break;
-        default:
-          headerImage.src = icon;
-          break;
-      }
-    };
-    applyIcon(headerImage);
-    applyIcon(headerImage2);
+
     const NewTheme = theme === "light" ? "dark" : "light";
     setTheme(NewTheme);
     localStorage.setItem("theme", NewTheme);
