@@ -4,7 +4,14 @@ export const ThirdContainer = ({ theme }) => {
   const divItems = items.map((obj) => {
     return (
       <li key={obj.id}>
-        <img src={obj.image} alt="" />
+        <img
+          src={
+            theme.substr(29) == "dark" && obj.name == "Express.js"
+              ? obj.imageDark
+              : obj.image
+          }
+          alt=""
+        />
         <span>{obj.name}</span>
       </li>
     );

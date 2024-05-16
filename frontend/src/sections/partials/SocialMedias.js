@@ -13,10 +13,18 @@ export const socialMedias = () => {
       >
         <img src={icon2} alt="" />
       </a>
-      <a className="buttonsHover" target="_blank" href="">
+      <a
+        className="buttonsHover"
+        target="_blank"
+        href="https://www.linkedin.com/in/skanetdima/"
+      >
         <img src={icon3} alt="" />
       </a>
-      <a className="buttonsHover" target="_blank" href="">
+      <a
+        className="buttonsHover"
+        target="_blank"
+        href="https://www.figma.com/@skanetdima"
+      >
         <img src={icon4} alt="" />
       </a>
     </>

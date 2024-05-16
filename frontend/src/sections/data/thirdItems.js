@@ -8,6 +8,7 @@ import image6 from "../../assets/images/icon-mongodb.svg";
 import image7 from "../../assets/images/icon-sass.svg";
 import image8 from "../../assets/images/icon-git.svg";
 import image9 from "../../assets/images/icon-figma.svg";
+import image10 from "../../assets/images/icon-express-dark.svg";
 
 export const items = [
   {
@@ -39,6 +40,7 @@ export const items = [
     id: 5,
     name: "Express.js",
     image: image5,
+    imageDark: image10,
   },
   {
     id: 6,
