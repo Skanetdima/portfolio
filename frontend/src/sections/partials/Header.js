@@ -24,25 +24,28 @@ export const Header = ({ darkMode, theme }) => {
         </div>
         <ul>
           <li>
-            <a href="#">About</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="#">Work</a>
+            <a href="#Work">Work</a>
           </li>
           <li>
-            <a href="#">Testimonials</a>
+            <a href="#Testimonials">Testimonials</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#seventhEmailH3">Contact</a>
           </li>
         </ul>
         <span onClick={darkMode}>
           <p>Switch Theme</p>
-          <a href="#" className="changeTheme buttonsHover">
+          <a className="changeTheme buttonsHover">
             <img src={switchIcon} alt="-" />
           </a>
         </span>
-        <a href="#" className="downloadCV">
+        <a
+          href="https://drive.google.com/file/d/1OGPGSI_fLh_uio94I--Pb48kUi9YA8pH/view"
+          className="downloadCV"
+        >
           Download CV
         </a>
       </div>
@@ -51,24 +54,27 @@ export const Header = ({ darkMode, theme }) => {
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#About">About</a>
             </li>
             <li>
-              <a href="#">Work</a>
+              <a href="#Work">Work</a>
             </li>
             <li>
-              <a href="#">Testimonials</a>
+              <a href="#Testimonials">Testimonials</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#seventhEmailH3">Contact</a>
             </li>
             <li onClick={darkMode}>
-              <a href="#" className="changeTheme buttonsHover">
+              <a className="changeTheme buttonsHover">
                 <img src={switchIcon} alt="" />
               </a>
             </li>
             <li>
-              <a href="#" className="downloadCV">
+              <a
+                href="https://drive.google.com/file/d/1OGPGSI_fLh_uio94I--Pb48kUi9YA8pH/view?usp=sharing"
+                className="downloadCV"
+              >
                 Download CV
               </a>
             </li>

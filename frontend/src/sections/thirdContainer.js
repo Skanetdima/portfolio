@@ -6,7 +6,7 @@ export const ThirdContainer = ({ theme }) => {
       <li key={obj.id}>
         <img
           src={
-            theme.substr(29) == "dark" && obj.name == "Express.js"
+            theme.substr(29) === "dark" && obj.name === "Express.js"
               ? obj.imageDark
               : obj.image
           }

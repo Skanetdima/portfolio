@@ -12,7 +12,7 @@ export const SixthContainer = ({ theme }) => {
   return (
     <div className={theme}>
       <span className="AboutMe">Testimonials</span>
-      <p>Nice things people have said about me:</p>
+      <p id="Testimonials">Nice things people have said about me:</p>
       <ul>{divItems}</ul>
     </div>
   );

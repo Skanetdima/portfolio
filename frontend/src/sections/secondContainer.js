@@ -8,7 +8,9 @@ export const SecondContainer = ({ theme }) => {
         <img src={icon} alt="" />
       </div>
       <div className="secondTextContainer">
-        <h3 className="secondHeading">Curious about me? Here you have it:</h3>
+        <h3 className="secondHeading" id="About">
+          Curious about me? Here you have it:
+        </h3>
         <p>
           I'm a passionate developer who specializes in full stack development
           (React.js & Node.js). I am glad to work with technical and visual

@@ -18,6 +18,10 @@
 body.active {
   overflow: hidden;
 }
+// smooth scrooll
+html {
+  scroll-behavior: smooth;
+}
 
 // Reseting styles
 * {

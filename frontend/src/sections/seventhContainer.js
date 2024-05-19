@@ -25,12 +25,12 @@ export const SeventhContainer = ({ theme }) => {
         developer, have a query, or simply want to connect.
       </p>
       <span className="seventhEmail">
-        <img src={icon} />
+        <img src={icon} alt="" />
         <h3 ref={h3Ref} id="seventhEmailH3">
           dimabogacan@gmail.com
         </h3>
         <button onClick={handleClick} className="buttonsHover popup">
-          <img src={icon1} />
+          <img src={icon1} alt="" />
           <span className="popuptext" id="myPopup">
             Copied
           </span>
